@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- META TAGS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- TITLE -->
+    <title>Document</title>
+</head>
+<body>
+    <!-- App -->
+    <div class="section app">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="logo-search">
+                <a href="" class="logo">
+                    <span class="icon"></span>
+                    <span class="logo-text headline-lg">Portfolio</span>
+                </a>
+            </div>
+            <div class="header-action">
+                <button class="btn-icon primary" title="Switch Theme" mode-switch>
+                    <ion-icon name="invert-mode-outline"></ion-icon>
+                </button>
+                <button class="btn-icon primary" title="Switch Theme" mode-switch>
+                    <ion-icon name="add-circle"></ion-icon>
+                </button>
+                <button class="btn-icon primary" title="Switch Theme" mode-switch>
+                    <ion-icon name="notifications-outline"></ion-icon>
+                </button>
+                <a href="" class="profile">
+                    <img class="circle" src="assets/images/profile.jpg" alt="profile image" profile-img>
+                    <span class="headline-md" profile-name>Mehmet Sezer</span>
+                </a>
+            </div>
+        </header>
+
+        <!-- Content -->
+        <div class="content padding-12">
+            <div class="sidebar">
+                <a href="index.html" class="btn-icon link:hover sidebar-icon active">
+                    <ion-icon name="home-outline"></ion-icon>
+                </a>
+
+                <a href="index.html" class="btn-icon link:hover sidebar-icon">
+                    <ion-icon name="pie-chart-outline"></ion-icon>
+                </a>
+
+                <a href="syallabus.html" class="btn-icon link:hover sidebar-icon">
+                    <ion-icon name="calendar-outline"></ion-icon>
+                </a>
+
+                <a href="index.html" class="btn-icon link:hover sidebar-icon">
+                    <ion-icon name="settings-outline"></ion-icon>
+                </a>
+
+                <a href="index.html" class="btn-icon link:hover sidebar-icon">
+                    <ion-icon name="newspaper-outline"></ion-icon>
+                </a>
+
+                <a href="selection.html" class="btn-icon link:hover warning sidebar-icon">
+                    <ion-icon name="alert-outline"></ion-icon>
+                </a>
+            </div>
+
+            <div class="container selection">
+                <div class="header">
+                    <p class="title-lg opacity-9" data-lessons-header>2023 - 2024 Güz Dönemi Ders Seçimi</p>
+                    <p class="title-md opacity-9" data-date-header>Aralık, 22</p>
+                </div>
+                <div class="line">
+                    <div class="status">
+                        <div class="item-status">
+                            <span class="title-lg" data-projects-process>45</span>
+                            <span class="headline-md status-type">Toplam Ders</span>
+                        </div>
+                        <div class="item-status">
+                            <span class="title-lg" data-projects-completed>24</span>
+                            <span class="headline-md status-type">İşlemde</span>
+                        </div>
+                        <div class="item-status">
+                            <span class="title-lg" data-projects-future>62</span>
+                            <span class="headline-md status-type">İşlemde</span>
+                        </div>
+                    </div>
+                </div>
+                <ul class="grid-list line-view">
+                    <li class="lesson-card card">
+                        <button class="btn-icon btn-details">
+                            <ion-icon name="reorder-four-outline"></ion-icon>
+                        </button>
+                        <div class="lesson-details">
+                            <span class="title-sm opacity-7" data-lesson-date>Aralık 10, 2023</span>
+                            <div>
+                                <span class="details-headline text-center" data-lesson-name>Web Tasarımı</span>
+                                <span class="label-md opacity-7 text-center" data-lesson-teacher>Önder Yakut</span>
+                            </div>
+                        </div>
+                        <div class="lesson-progress">
+                            <span class="body-lg">56% Tamamlandı <ion-icon name="trending-up-outline"></ion-icon></span>
+                            <progress id="file" value="56" max="100"> 32% </progress>
+                        </div>
+                        <!-- <div class="lesson-warning grid-list">
+                            <button class="btn btn-lesson-warning homework"><ion-icon name="briefcase"></ion-icon><p>+9</p> Ödev</button>
+                            <button class="btn btn-lesson-warning folder"><ion-icon name="folder-open"></ion-icon><p>+9</p> Dosya</button>
+                            <button class="btn btn-lesson-warning exam"><ion-icon name="alert-circle"></ion-icon><p>+9</p> Sınav</button>
+                        </div> -->
+                        
+                    </li>
+                    <li class="lesson-card card">
+                        <button class="btn-icon btn-details">
+                            <ion-icon name="reorder-four-outline"></ion-icon>
+                        </button>
+                        <div class="lesson-details">
+                            <span class="title-sm opacity-7" data-lesson-date>Aralık 10, 2023</span>
+                            <div>
+                                <span class="details-headline text-center" data-lesson-name>Web Tasarımı</span>
+                                <span class="label-md opacity-7 text-center" data-lesson-teacher>Önder Yakut</span>
+                            </div>
+                        </div>
+                        <div class="lesson-progress">
+                            <span class="body-lg">56% Tamamlandı <ion-icon name="trending-up-outline"></ion-icon></span>
+                            <progress id="file" value="56" max="100"> 32% </progress>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+
+
+
+
+    <!-- Script -->
+    <!-- Custom Script -->
+    <script src="assets/js/script.js"></script>
+
+    <!-- Font -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
