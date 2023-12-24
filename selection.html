@@ -9,10 +9,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <!-- ICON -->
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+
     <!-- TITLE -->
-    <title>Document</title>
+    <title>Portfolio</title>
 </head>
 <body>
     <!-- App -->
@@ -67,7 +72,7 @@
                 </a>
 
                 <a href="selection.html" class="btn-icon link:hover warning sidebar-icon">
-                    <ion-icon name="alert-outline"></ion-icon>
+                    <ion-icon name="alert-outline"></ion-icon>  
                 </a>
             </div>
 
@@ -76,63 +81,689 @@
                     <p class="title-lg opacity-9" data-lessons-header>2023 - 2024 Güz Dönemi Ders Seçimi</p>
                     <p class="title-md opacity-9" data-date-header>Aralık, 22</p>
                 </div>
+
                 <div class="line">
                     <div class="status">
                         <div class="item-status">
-                            <span class="title-lg" data-projects-process>45</span>
-                            <span class="headline-md status-type">Toplam Ders</span>
+                            <span class="title-lg" data-projects-process>36</span>
+                            <span class="headline-md status-type">Alınan Kredi</span>
                         </div>
                         <div class="item-status">
-                            <span class="title-lg" data-projects-completed>24</span>
-                            <span class="headline-md status-type">İşlemde</span>
+                            <span class="title-lg" data-projects-completed>30</span>
+                            <span class="headline-md status-type">Asgari Kredi</span>
                         </div>
                         <div class="item-status">
-                            <span class="title-lg" data-projects-future>62</span>
-                            <span class="headline-md status-type">İşlemde</span>
+                            <span class="title-lg" data-projects-future>40</span>
+                            <span class="headline-md status-type">Azami Kredi</span>
                         </div>
                     </div>
+                    <div class="view-actions">
+                        <button class="btn btn-apply">
+                            <ion-icon name="checkmark-outline"></ion-icon>
+                            <span>Onayla</span>
+                        </button>
+                    </div>
                 </div>
-                <ul class="grid-list line-view">
-                    <li class="lesson-card card">
-                        <button class="btn-icon btn-details">
-                            <ion-icon name="reorder-four-outline"></ion-icon>
-                        </button>
-                        <div class="lesson-details">
-                            <span class="title-sm opacity-7" data-lesson-date>Aralık 10, 2023</span>
-                            <div>
-                                <span class="details-headline text-center" data-lesson-name>Web Tasarımı</span>
-                                <span class="label-md opacity-7 text-center" data-lesson-teacher>Önder Yakut</span>
-                            </div>
-                        </div>
-                        <div class="lesson-progress">
-                            <span class="body-lg">56% Tamamlandı <ion-icon name="trending-up-outline"></ion-icon></span>
-                            <progress id="file" value="56" max="100"> 32% </progress>
-                        </div>
-                        <!-- <div class="lesson-warning grid-list">
-                            <button class="btn btn-lesson-warning homework"><ion-icon name="briefcase"></ion-icon><p>+9</p> Ödev</button>
-                            <button class="btn btn-lesson-warning folder"><ion-icon name="folder-open"></ion-icon><p>+9</p> Dosya</button>
-                            <button class="btn btn-lesson-warning exam"><ion-icon name="alert-circle"></ion-icon><p>+9</p> Sınav</button>
-                        </div> -->
-                        
-                    </li>
-                    <li class="lesson-card card">
-                        <button class="btn-icon btn-details">
-                            <ion-icon name="reorder-four-outline"></ion-icon>
-                        </button>
-                        <div class="lesson-details">
-                            <span class="title-sm opacity-7" data-lesson-date>Aralık 10, 2023</span>
-                            <div>
-                                <span class="details-headline text-center" data-lesson-name>Web Tasarımı</span>
-                                <span class="label-md opacity-7 text-center" data-lesson-teacher>Önder Yakut</span>
-                            </div>
-                        </div>
-                        <div class="lesson-progress">
-                            <span class="body-lg">56% Tamamlandı <ion-icon name="trending-up-outline"></ion-icon></span>
-                            <progress id="file" value="56" max="100"> 32% </progress>
-                        </div>
 
+                <table class="table table-selection">
+                    <caption class="opacity-7">Seçilen Dersler</caption>
+                    <thead>
+                        <th class="table-header">İçerik</th>
+                        <th class="table-header">Kodu</th>
+                        <th class="table-header">Ders Türü</th>
+                        <th class="table-header">Dersin Dili</th>
+                        <th class="table-header">Kontenjan</th>
+                        <th class="table-header">AKTS</th>
+                        <th class="table-header">Ders Programı</th>
+                        <th class="table-header">Durum</th>
+                    </thead>
+                    <tbody>
+                        <tr class="lesson-card-selection card">
+                            <td>
+                                <div class="lesson-details">
+                                    <span class="title-sm opacity-7" data-lesson-date>Aralık 10, 2023</span>
+                                    <div>
+                                        <span class="details-headline text-center" data-lesson-name>Web Tasarımı</span>
+                                        <span class="label-md opacity-7 text-center" data-lesson-teacher>Önder Yakut</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <span>FEF103</span>
+                            </td>
+                            <td>
+                                <span class="warning">ZORUNLU</span>
+                            </td>
+                            <td>
+                                <span>TÜRKÇE</span>
+                            </td>
+                            <td>
+                                <div class="lesson-progress">
+                                    <span class="body-lg">56% Tamamlandı <ion-icon name="trending-up-outline"></ion-icon></span>
+                                    <progress id="file" value="56" max="100"> 32% </progress>
+                                </div>
+                            </td>
+                            <td>
+                                <span>4 AKTS</span>
+                            </td>
+                            <td>
+                                <ul class="grid-list line-view lesson-hours-grid">
+                                    <span>Salı 11.00 - 12.00</span>
+                                    <span>Cuma 11.00 - 12.00</span>
+                                    <span>Cuma 11.00 - 12.00</span>
+                                    <span>Cuma 11.00 - 12.00</span>
+                                </ul>
+                            </td>
+                            <td>
+                                <button class="btn btn-warning btn-selection">
+                                    <ion-icon name="trash"></ion-icon>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="lesson-card-selection card">
+                            <td>
+                                <div class="lesson-details">
+                                    <span class="title-sm opacity-7" data-lesson-date>Aralık 10, 2023</span>
+                                    <div>
+                                        <span class="details-headline text-center" data-lesson-name>Web Tasarımı</span>
+                                        <span class="label-md opacity-7 text-center" data-lesson-teacher>Önder Yakut</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <span>FEF103</span>
+                            </td>
+                            <td>
+                                <span class="warning">ZORUNLU</span>
+                            </td>
+                            <td>
+                                <span>TÜRKÇE</span>
+                            </td>
+                            <td>
+                                <div class="lesson-progress">
+                                    <span class="body-lg">56% Tamamlandı <ion-icon name="trending-up-outline"></ion-icon></span>
+                                    <progress id="file" value="56" max="100"> 32% </progress>
+                                </div>
+                            </td>
+                            <td>
+                                <span>4 AKTS</span>
+                            </td>
+                            <td>
+                                <ul class="grid-list line-view lesson-hours-grid">
+                                    <span>Salı 11.00 - 12.00</span>
+                                    <span>Cuma 11.00 - 12.00</span>
+                                    <span>Cuma 11.00 - 12.00</span>
+                                    <span>Cuma 11.00 - 12.00</span>
+                                </ul>
+                            </td>
+                            <td>
+                                <button class="btn btn-warning btn-selection">
+                                    <ion-icon name="trash"></ion-icon>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="lesson-card-selection card">
+                            <td>
+                                <div class="lesson-details">
+                                    <span class="title-sm opacity-7" data-lesson-date>Aralık 10, 2023</span>
+                                    <div>
+                                        <span class="details-headline text-center" data-lesson-name>Web Tasarımı</span>
+                                        <span class="label-md opacity-7 text-center" data-lesson-teacher>Önder Yakut</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <span>FEF103</span>
+                            </td>
+                            <td>
+                                <span class="apply">SEÇMELİ</span>
+                            </td>
+                            <td>
+                                <span>TÜRKÇE</span>
+                            </td>
+                            <td>
+                                <div class="lesson-progress">
+                                    <span class="body-lg">56% Tamamlandı <ion-icon name="trending-up-outline"></ion-icon></span>
+                                    <progress id="file" value="56" max="100"> 32% </progress>
+                                </div>
+                            </td>
+                            <td>
+                                <span>4 AKTS</span>
+                            </td>
+                            <td>
+                                <ul class="grid-list line-view lesson-hours-grid">
+                                    <span>Salı 11.00 - 12.00</span>
+                                    <span>Cuma 11.00 - 12.00</span>
+                                    <span>Cuma 11.00 - 12.00</span>
+                                    <span>Cuma 11.00 - 12.00</span>
+                                </ul>
+                            </td>
+                            <td>
+                                <button class="btn btn-warning btn-selection">
+                                    <ion-icon name="trash"></ion-icon>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="lesson-card-selection card">
+                            <td>
+                                <div class="lesson-details">
+                                    <span class="title-sm opacity-7" data-lesson-date>Aralık 10, 2023</span>
+                                    <div>
+                                        <span class="details-headline text-center" data-lesson-name>Web Tasarımı</span>
+                                        <span class="label-md opacity-7 text-center" data-lesson-teacher>Önder Yakut</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <span>FEF103</span>
+                            </td>
+                            <td>
+                                <span class="notice">ÜSD</span>
+                            </td>
+                            <td>
+                                <span>TÜRKÇE</span>
+                            </td>
+                            <td>
+                                <div class="lesson-progress">
+                                    <span class="body-lg">56% Tamamlandı <ion-icon name="trending-up-outline"></ion-icon></span>
+                                    <progress id="file" value="56" max="100"> 32% </progress>
+                                </div>
+                            </td>
+                            <td>
+                                <span>4 AKTS</span>
+                            </td>
+                            <td>
+                                <ul class="grid-list line-view lesson-hours-grid">
+                                    <span>Salı 11.00 - 12.00</span>
+                                    <span>Cuma 11.00 - 12.00</span>
+                                    <span>Cuma 11.00 - 12.00</span>
+                                    <span>Cuma 11.00 - 12.00</span>
+                                </ul>
+                            </td>
+                            <td>
+                                <button class="btn btn-warning btn-selection">
+                                    <ion-icon name="trash"></ion-icon>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="lesson-card-selection card">
+                            <td>
+                                <div class="lesson-details">
+                                    <span class="title-sm opacity-7" data-lesson-date>Aralık 10, 2023</span>
+                                    <div>
+                                        <span class="details-headline text-center" data-lesson-name>Web Tasarımı</span>
+                                        <span class="label-md opacity-7 text-center" data-lesson-teacher>Önder Yakut</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <span>FEF103</span>
+                            </td>
+                            <td>
+                                <span class="notice">ÜSD</span>
+                            </td>
+                            <td>
+                                <span>TÜRKÇE</span>
+                            </td>
+                            <td>
+                                <div class="lesson-progress">
+                                    <span class="body-lg">56% Tamamlandı <ion-icon name="trending-up-outline"></ion-icon></span>
+                                    <progress id="file" value="56" max="100"> 32% </progress>
+                                </div>
+                            </td>
+                            <td>
+                                <span>4 AKTS</span>
+                            </td>
+                            <td>
+                                <ul class="grid-list line-view lesson-hours-grid">
+                                    <span>Salı 11.00 - 12.00</span>
+                                    <span>Cuma 11.00 - 12.00</span>
+                                    <span>Cuma 11.00 - 12.00</span>
+                                    <span>Cuma 11.00 - 12.00</span>
+                                </ul>
+                            </td>
+                            <td>
+                                <button class="btn btn-warning btn-selection">
+                                    <ion-icon name="trash"></ion-icon>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="lesson-card-selection card">
+                            <td>
+                                <div class="lesson-details">
+                                    <span class="title-sm opacity-7" data-lesson-date>Aralık 10, 2023</span>
+                                    <div>
+                                        <span class="details-headline text-center" data-lesson-name>Web Tasarımı</span>
+                                        <span class="label-md opacity-7 text-center" data-lesson-teacher>Önder Yakut</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <span>FEF103</span>
+                            </td>
+                            <td>
+                                <span class="notice">ÜSD</span>
+                            </td>
+                            <td>
+                                <span>TÜRKÇE</span>
+                            </td>
+                            <td>
+                                <div class="lesson-progress">
+                                    <span class="body-lg">56% Tamamlandı <ion-icon name="trending-up-outline"></ion-icon></span>
+                                    <progress id="file" value="56" max="100"> 32% </progress>
+                                </div>
+                            </td>
+                            <td>
+                                <span>4 AKTS</span>
+                            </td>
+                            <td>
+                                <ul class="grid-list line-view lesson-hours-grid">
+                                    <span>Salı 11.00 - 12.00</span>
+                                    <span>Cuma 11.00 - 12.00</span>
+                                    <span>Cuma 11.00 - 12.00</span>
+                                    <span>Cuma 11.00 - 12.00</span>
+                                </ul>
+                            </td>
+                            <td>
+                                <button class="btn btn-warning btn-selection">
+                                    <ion-icon name="trash"></ion-icon>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="table table-selection">
+                    <caption class="opacity-7">Seçilebilir Dersler</caption>
+                    <thead>
+                        <th class="table-header">İçerik</th>
+                        <th class="table-header">Kodu</th>
+                        <th class="table-header">Ders Türü</th>
+                        <th class="table-header">Dersin Dili</th>
+                        <th class="table-header">Kontenjan</th>
+                        <th class="table-header">AKTS</th>
+                        <th class="table-header">Ders Programı</th>
+                        <th class="table-header">Durum</th>
+                    </thead>
+                    <tbody>
+                        <tr class="lesson-card-selection card">
+                            <td>
+                                <div class="lesson-details">
+                                    <span class="title-sm opacity-7" data-lesson-date>Aralık 10, 2023</span>
+                                    <div>
+                                        <span class="details-headline text-center" data-lesson-name>Web Tasarımı</span>
+                                        <span class="label-md opacity-7 text-center" data-lesson-teacher>Önder Yakut</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <span>FEF103</span>
+                            </td>
+                            <td>
+                                <span class="warning">ZORUNLU</span>
+                            </td>
+                            <td>
+                                <span>TÜRKÇE</span>
+                            </td>
+                            <td>
+                                <div class="lesson-progress">
+                                    <span class="body-lg">56% Tamamlandı <ion-icon name="trending-up-outline"></ion-icon></span>
+                                    <progress id="file" value="56" max="100"> 32% </progress>
+                                </div>
+                            </td>
+                            <td>
+                                <span>4 AKTS</span>
+                            </td>
+                            <td>
+                                <ul class="grid-list line-view lesson-hours-grid">
+                                    <span>Salı 11.00 - 12.00</span>
+                                    <span>Cuma 11.00 - 12.00</span>
+                                    <span>Cuma 11.00 - 12.00</span>
+                                    <span>Cuma 11.00 - 12.00</span>
+                                </ul>
+                            </td>
+                            <td>
+                                <button class="btn btn-apply btn-selection">
+                                    <ion-icon name="caret-up"></ion-icon>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="lesson-card-selection card">
+                            <td>
+                                <div class="lesson-details">
+                                    <span class="title-sm opacity-7" data-lesson-date>Aralık 10, 2023</span>
+                                    <div>
+                                        <span class="details-headline text-center" data-lesson-name>Web Tasarımı</span>
+                                        <span class="label-md opacity-7 text-center" data-lesson-teacher>Önder Yakut</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <span>FEF103</span>
+                            </td>
+                            <td>
+                                <span class="warning">ZORUNLU</span>
+                            </td>
+                            <td>
+                                <span>TÜRKÇE</span>
+                            </td>
+                            <td>
+                                <div class="lesson-progress">
+                                    <span class="body-lg">56% Tamamlandı <ion-icon name="trending-up-outline"></ion-icon></span>
+                                    <progress id="file" value="56" max="100"> 32% </progress>
+                                </div>
+                            </td>
+                            <td>
+                                <span>4 AKTS</span>
+                            </td>
+                            <td>
+                                <ul class="grid-list line-view lesson-hours-grid">
+                                    <span>Salı 11.00 - 12.00</span>
+                                    <span>Cuma 11.00 - 12.00</span>
+                                    <span>Cuma 11.00 - 12.00</span>
+                                    <span>Cuma 11.00 - 12.00</span>
+                                </ul>
+                            </td>
+                            <td>
+                                <button class="btn btn-apply btn-selection">
+                                    <ion-icon name="caret-up"></ion-icon>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="lesson-card-selection card">
+                            <td>
+                                <div class="lesson-details">
+                                    <span class="title-sm opacity-7" data-lesson-date>Aralık 10, 2023</span>
+                                    <div>
+                                        <span class="details-headline text-center" data-lesson-name>Web Tasarımı</span>
+                                        <span class="label-md opacity-7 text-center" data-lesson-teacher>Önder Yakut</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <span>FEF103</span>
+                            </td>
+                            <td>
+                                <span class="apply">SEÇMELİ</span>
+                            </td>
+                            <td>
+                                <span>TÜRKÇE</span>
+                            </td>
+                            <td>
+                                <div class="lesson-progress">
+                                    <span class="body-lg">56% Tamamlandı <ion-icon name="trending-up-outline"></ion-icon></span>
+                                    <progress id="file" value="56" max="100"> 32% </progress>
+                                </div>
+                            </td>
+                            <td>
+                                <span>4 AKTS</span>
+                            </td>
+                            <td>
+                                <ul class="grid-list line-view lesson-hours-grid">
+                                    <span>Salı 11.00 - 12.00</span>
+                                    <span>Cuma 11.00 - 12.00</span>
+                                    <span>Cuma 11.00 - 12.00</span>
+                                    <span>Cuma 11.00 - 12.00</span>
+                                </ul>
+                            </td>
+                            <td>
+                                <button class="btn btn-apply btn-selection">
+                                    <ion-icon name="caret-up"></ion-icon>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="lesson-card-selection card">
+                            <td>
+                                <div class="lesson-details">
+                                    <span class="title-sm opacity-7" data-lesson-date>Aralık 10, 2023</span>
+                                    <div>
+                                        <span class="details-headline text-center" data-lesson-name>Web Tasarımı</span>
+                                        <span class="label-md opacity-7 text-center" data-lesson-teacher>Önder Yakut</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <span>FEF103</span>
+                            </td>
+                            <td>
+                                <span class="warning">ZORUNLU</span>
+                            </td>
+                            <td>
+                                <span>TÜRKÇE</span>
+                            </td>
+                            <td>
+                                <div class="lesson-progress">
+                                    <span class="body-lg">56% Tamamlandı <ion-icon name="trending-up-outline"></ion-icon></span>
+                                    <progress id="file" value="56" max="100"> 32% </progress>
+                                </div>
+                            </td>
+                            <td>
+                                <span>4 AKTS</span>
+                            </td>
+                            <td>
+                                <ul class="grid-list line-view lesson-hours-grid">
+                                    <span>Salı 11.00 - 12.00</span>
+                                    <span>Cuma 11.00 - 12.00</span>
+                                    <span>Cuma 11.00 - 12.00</span>
+                                    <span>Cuma 11.00 - 12.00</span>
+                                </ul>
+                            </td>
+                            <td>
+                                <button class="btn btn-apply btn-selection">
+                                    <ion-icon name="caret-up"></ion-icon>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="lesson-card-selection card">
+                            <td>
+                                <div class="lesson-details">
+                                    <span class="title-sm opacity-7" data-lesson-date>Aralık 10, 2023</span>
+                                    <div>
+                                        <span class="details-headline text-center" data-lesson-name>Web Tasarımı</span>
+                                        <span class="label-md opacity-7 text-center" data-lesson-teacher>Önder Yakut</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <span>FEF103</span>
+                            </td>
+                            <td>
+                                <span class="apply">SEÇMELİ</span>
+                            </td>
+                            <td>
+                                <span>TÜRKÇE</span>
+                            </td>
+                            <td>
+                                <div class="lesson-progress">
+                                    <span class="body-lg">56% Tamamlandı <ion-icon name="trending-up-outline"></ion-icon></span>
+                                    <progress id="file" value="56" max="100"> 32% </progress>
+                                </div>
+                            </td>
+                            <td>
+                                <span>4 AKTS</span>
+                            </td>
+                            <td>
+                                <ul class="grid-list line-view lesson-hours-grid">
+                                    <span>Salı 11.00 - 12.00</span>
+                                    <span>Cuma 11.00 - 12.00</span>
+                                    <span>Cuma 11.00 - 12.00</span>
+                                    <span>Cuma 11.00 - 12.00</span>
+                                </ul>
+                            </td>
+                            <td>
+                                <button class="btn btn-apply btn-selection">
+                                    <ion-icon name="caret-up"></ion-icon>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="lesson-card-selection card">
+                            <td>
+                                <div class="lesson-details">
+                                    <span class="title-sm opacity-7" data-lesson-date>Aralık 10, 2023</span>
+                                    <div>
+                                        <span class="details-headline text-center" data-lesson-name>Web Tasarımı</span>
+                                        <span class="label-md opacity-7 text-center" data-lesson-teacher>Önder Yakut</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <span>FEF103</span>
+                            </td>
+                            <td>
+                                <span class="apply">SEÇMELİ</span>
+                            </td>
+                            <td>
+                                <span>TÜRKÇE</span>
+                            </td>
+                            <td>
+                                <div class="lesson-progress">
+                                    <span class="body-lg">56% Tamamlandı <ion-icon name="trending-up-outline"></ion-icon></span>
+                                    <progress id="file" value="56" max="100"> 32% </progress>
+                                </div>
+                            </td>
+                            <td>
+                                <span>4 AKTS</span>
+                            </td>
+                            <td>
+                                <ul class="grid-list line-view lesson-hours-grid">
+                                    <span>Salı 11.00 - 12.00</span>
+                                    <span>Cuma 11.00 - 12.00</span>
+                                    <span>Cuma 11.00 - 12.00</span>
+                                    <span>Cuma 11.00 - 12.00</span>
+                                </ul>
+                            </td>
+                            <td>
+                                <button class="btn btn-apply btn-selection">
+                                    <ion-icon name="caret-up"></ion-icon>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="table table-selection">
+                    <caption class="opacity-7">ÜSD Dersler</caption>
+                    <thead>
+                        <th class="table-header">İçerik</th>
+                        <th class="table-header">Kodu</th>
+                        <th class="table-header">Ders Türü</th>
+                        <th class="table-header">Dersin Dili</th>
+                        <th class="table-header">Kontenjan</th>
+                        <th class="table-header">AKTS</th>
+                        <th class="table-header">Ders Programı</th>
+                        <th class="table-header">Durum</th>
+                    </thead>
+                    <tbody>
+                        <tr class="lesson-card-selection card">
+                            <td>
+                                <div class="lesson-details">
+                                    <span class="title-sm opacity-7" data-lesson-date>Aralık 10, 2023</span>
+                                    <div>
+                                        <span class="details-headline text-center" data-lesson-name>Web Tasarımı</span>
+                                        <span class="label-md opacity-7 text-center" data-lesson-teacher>Önder Yakut</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <span>FEF103</span>
+                            </td>
+                            <td>
+                                <span class="notice">ÜSD</span>
+                            </td>
+                            <td>
+                                <span>TÜRKÇE</span>
+                            </td>
+                            <td>
+                                <div class="lesson-progress">
+                                    <span class="body-lg">56% Tamamlandı <ion-icon name="trending-up-outline"></ion-icon></span>
+                                    <progress id="file" value="56" max="100"> 32% </progress>
+                                </div>
+                            </td>
+                            <td>
+                                <span>4 AKTS</span>
+                            </td>
+                            <td>
+                                <ul class="grid-list line-view lesson-hours-grid">
+                                    <span>Salı 11.00 - 12.00</span>
+                                    <span>Cuma 11.00 - 12.00</span>
+                                    <span>Cuma 11.00 - 12.00</span>
+                                    <span>Cuma 11.00 - 12.00</span>
+                                </ul>
+                            </td>
+                            <td>
+                                <button class="btn btn-apply btn-selection">
+                                    <ion-icon name="caret-up"></ion-icon>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- <ul class="grid-list line-view list-selection">
+                    <li class="grid-list-header">
+                        <span>İçerik</span>
+                        <span>İçerik</span>
+                        <span>İçerik</span>
                     </li>
-                </ul>
+                    <li class="lesson-card card">
+                        <button class="btn-icon btn-details">
+                            <ion-icon name="close-outline"></ion-icon>
+                        </button>
+                        <div class="lesson-details">
+                            <span class="title-sm opacity-7" data-lesson-code>TBL202452</span>
+                            <div>
+                                <span class="details-headline text-center" data-lesson-name>Web Tasarımı</span>
+                                <span class="label-md opacity-7 text-center" data-lesson-teacher>Önder Yakut</span>
+                            </div>
+                        </div>
+                        <span>
+                            4 AKTS
+                        </span>
+                        <span class="notice">
+                            SEÇMELİ
+                        </span>
+                        <span>
+                            TÜRKÇE
+                        </span>
+                        <div class="lesson-progress">
+                            <span class="body-lg">25/100</span>
+                            <progress id="file" value="25" max="100"> 25% </progress>
+                        </div>
+                        <ul class="grid-list line-view lesson-hours-grid">
+                            <span>Salı 11.00 - 12.00</span>
+                            <span>Cuma 11.00 - 12.00</span>
+                        </ul>
+                    </li>
+                    <li class="lesson-card card">
+                        <button class="btn-icon btn-details">
+                            <ion-icon name="close-outline"></ion-icon>
+                        </button>
+                        <div class="lesson-details">
+                            <span class="title-sm opacity-7" data-lesson-code>TBL202452</span>
+                            <div>
+                                <span class="details-headline text-center" data-lesson-name>Web Tasarımı</span>
+                                <span class="label-md opacity-7 text-center" data-lesson-teacher>Önder Yakut</span>
+                            </div>
+                        </div>
+                        <span>
+                            4 AKTS
+                        </span>
+                        <span class="warning">
+                            ZORUNLU
+                        </span>
+                        <span>
+                            TÜRKÇE
+                        </span>
+                        <div class="lesson-progress">
+                            <span class="body-lg">25/100</span>
+                            <progress id="file" value="25" max="100"> 25% </progress>
+                        </div>
+                        <ul class="grid-list line-view lesson-hours-grid">
+                            <span>Salı 11.00 - 12.00</span>
+                            <span>Cuma 11.00 - 12.00</span>
+                        </ul>
+                    </li>
+                </ul> -->
             </div>
         </div>
         </div>
